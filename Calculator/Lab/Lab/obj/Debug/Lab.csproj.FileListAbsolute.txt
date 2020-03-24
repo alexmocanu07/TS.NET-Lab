@@ -16,3 +16,12 @@ D:\Alex\TSP DotNet\Lab\Lab\Lab\obj\Debug\Lab.Properties.Resources.resources
 D:\Alex\TSP DotNet\Lab\Lab\Lab\obj\Debug\Lab.csproj.GenerateResource.cache
 D:\Alex\TSP DotNet\Lab\Lab\Lab\obj\Debug\Lab.exe
 D:\Alex\TSP DotNet\Lab\Lab\Lab\obj\Debug\Lab.pdb
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\bin\Debug\Lab.exe.config
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\bin\Debug\Lab.exe
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\bin\Debug\Lab.pdb
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\obj\Debug\Lab.csprojAssemblyReference.cache
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\obj\Debug\Lab.Form1.resources
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\obj\Debug\Lab.Properties.Resources.resources
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\obj\Debug\Lab.csproj.GenerateResource.cache
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\obj\Debug\Lab.exe
+D:\Git\TS.NET-Lab\Calculator\Lab\Lab\obj\Debug\Lab.pdb

@@ -9,3 +9,14 @@ D:\TSP DotNet\EF Studii caz\EFStudiiCaz\EFStudiiCaz\obj\Debug\EFStudiiCaz.csproj
 D:\TSP DotNet\EF Studii caz\EFStudiiCaz\EFStudiiCaz\obj\Debug\EFStudiiCaz.csproj.CopyComplete
 D:\TSP DotNet\EF Studii caz\EFStudiiCaz\EFStudiiCaz\obj\Debug\EFStudiiCaz.exe
 D:\TSP DotNet\EF Studii caz\EFStudiiCaz\EFStudiiCaz\obj\Debug\EFStudiiCaz.pdb
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\bin\Debug\EFStudiiCaz.exe.config
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\bin\Debug\EFStudiiCaz.exe
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\bin\Debug\EFStudiiCaz.pdb
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\bin\Debug\EntityFramework.dll
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\bin\Debug\EntityFramework.SqlServer.dll
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\bin\Debug\EntityFramework.xml
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\bin\Debug\EntityFramework.SqlServer.xml
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\obj\Debug\EFStudiiCaz.csprojAssemblyReference.cache
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\obj\Debug\EFStudiiCaz.csproj.CopyComplete
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\obj\Debug\EFStudiiCaz.exe
+D:\Git\TS.NET-Lab\EF Studii caz\EFStudiiCaz\EFStudiiCaz\obj\Debug\EFStudiiCaz.pdb
