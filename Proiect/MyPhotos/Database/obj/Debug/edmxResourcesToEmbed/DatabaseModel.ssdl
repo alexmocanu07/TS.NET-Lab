@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="DatabaseModelStoreContainer">
+    <EntitySet Name="Files" EntityType="DatabaseModel.Store.Files" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Properties" EntityType="DatabaseModel.Store.Properties" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="FileProperties" EntityType="DatabaseModel.Store.FileProperties" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FileFileProperty" Association="DatabaseModel.Store.FileFileProperty">
+      <End Role="File" EntitySet="Files" />
+      <End Role="FileProperty" EntitySet="FileProperties" />
+    </AssociationSet>
+    <AssociationSet Name="PropertyFileProperty" Association="DatabaseModel.Store.PropertyFileProperty">
+      <End Role="Property" EntitySet="Properties" />
+      <End Role="FileProperty" EntitySet="FileProperties" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Files">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Path" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Properties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Name" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="DataType" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Editable" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FileProperties">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="FileId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PropertyId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Value" Type="nvarchar(max)" Nullable="false" />
+  </EntityType>
+  <Association Name="FileFileProperty">
+    <End Role="File" Type="DatabaseModel.Store.Files" Multiplicity="1" />
+    <End Role="FileProperty" Type="DatabaseModel.Store.FileProperties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="File">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FileProperty">
+        <PropertyRef Name="FileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PropertyFileProperty">
+    <End Role="Property" Type="DatabaseModel.Store.Properties" Multiplicity="1" />
+    <End Role="FileProperty" Type="DatabaseModel.Store.FileProperties" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FileProperty">
+        <PropertyRef Name="PropertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

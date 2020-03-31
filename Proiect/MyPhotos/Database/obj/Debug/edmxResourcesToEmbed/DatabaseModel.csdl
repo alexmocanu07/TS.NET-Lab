@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="DatabaseModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="DatabaseModelContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Files" EntityType="DatabaseModel.File" />
+    <EntitySet Name="Properties" EntityType="DatabaseModel.Property" />
+    <EntitySet Name="FileProperties" EntityType="DatabaseModel.FileProperty" />
+    <AssociationSet Name="FileFileProperty" Association="DatabaseModel.FileFileProperty">
+      <End Role="File" EntitySet="Files" />
+      <End Role="FileProperty" EntitySet="FileProperties" />
+    </AssociationSet>
+    <AssociationSet Name="PropertyFileProperty" Association="DatabaseModel.PropertyFileProperty">
+      <End Role="Property" EntitySet="Properties" />
+      <End Role="FileProperty" EntitySet="FileProperties" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="File">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Path" Type="String" Nullable="false" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+    <NavigationProperty Name="FileProperties" Relationship="DatabaseModel.FileFileProperty" FromRole="File" ToRole="FileProperty" />
+  </EntityType>
+  <EntityType Name="Property">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="Name" Type="String" Nullable="false" />
+    <Property Name="Description" Type="String" Nullable="false" />
+    <Property Name="DataType" Type="String" Nullable="false" />
+    <NavigationProperty Name="FileProperties" Relationship="DatabaseModel.PropertyFileProperty" FromRole="Property" ToRole="FileProperty" />
+    <Property Name="Editable" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="FileProperty">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <NavigationProperty Name="File" Relationship="DatabaseModel.FileFileProperty" FromRole="FileProperty" ToRole="File" />
+    <Property Name="FileId" Type="Guid" Nullable="false" />
+    <NavigationProperty Name="Property" Relationship="DatabaseModel.PropertyFileProperty" FromRole="FileProperty" ToRole="Property" />
+    <Property Name="PropertyId" Type="Guid" Nullable="false" />
+    <Property Name="Value" Type="String" Nullable="false" />
+  </EntityType>
+  <Association Name="FileFileProperty">
+    <End Type="DatabaseModel.File" Role="File" Multiplicity="1" />
+    <End Type="DatabaseModel.FileProperty" Role="FileProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="File">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FileProperty">
+        <PropertyRef Name="FileId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="PropertyFileProperty">
+    <End Type="DatabaseModel.Property" Role="Property" Multiplicity="1" />
+    <End Type="DatabaseModel.FileProperty" Role="FileProperty" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Property">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="FileProperty">
+        <PropertyRef Name="PropertyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

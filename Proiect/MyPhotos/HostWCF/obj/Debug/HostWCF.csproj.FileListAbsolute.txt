@@ -1,0 +1,17 @@
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\HostWCF.exe.config
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\HostWCF.exe
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\HostWCF.pdb
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\ObjectWCF.dll
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\Database.dll
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\EntityFramework.dll
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\EntityFramework.SqlServer.dll
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\ObjectWCF.pdb
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\Database.pdb
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\Database.dll.config
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\EntityFramework.xml
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\bin\Debug\EntityFramework.SqlServer.xml
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\obj\Debug\HostWCF.csprojAssemblyReference.cache
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\obj\Debug\HostWCF.csproj.CoreCompileInputs.cache
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\obj\Debug\HostWCF.csproj.CopyComplete
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\obj\Debug\HostWCF.exe
+D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\HostWCF\obj\Debug\HostWCF.pdb
