@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.ServiceModel;
 using System.Text;
 using System.Threading.Tasks;
+using System.ServiceModel;
 using Database;
+
 namespace ObjectWCF
 {
     [ServiceContract]
@@ -71,3 +72,4 @@ namespace ObjectWCF
     [ServiceContract]
     interface IDatabase : InterfaceFile, InterfaceProperty, InterfaceFileProperty { }
 }
+

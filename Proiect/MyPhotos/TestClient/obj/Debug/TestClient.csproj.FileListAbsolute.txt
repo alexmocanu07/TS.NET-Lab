@@ -1,0 +1,7 @@
+D:\TSNET\MyPhotos\TestClient\bin\Debug\TestClient.exe.config
+D:\TSNET\MyPhotos\TestClient\bin\Debug\TestClient.exe
+D:\TSNET\MyPhotos\TestClient\bin\Debug\TestClient.pdb
+D:\TSNET\MyPhotos\TestClient\obj\Debug\TestClient.csprojAssemblyReference.cache
+D:\TSNET\MyPhotos\TestClient\obj\Debug\TestClient.csproj.CoreCompileInputs.cache
+D:\TSNET\MyPhotos\TestClient\obj\Debug\TestClient.exe
+D:\TSNET\MyPhotos\TestClient\obj\Debug\TestClient.pdb

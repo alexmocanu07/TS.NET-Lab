@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using Database;
 
 namespace MyPhotosGUI
 {
@@ -16,6 +16,8 @@ namespace MyPhotosGUI
         //private FileController fileController;
         //private PropertyController propertyController;
         //private FilePropertyController filePropertyController;
+
+        private DatabaseClient client;
         private File file;
         private Property property;
         private string propertyValue;
@@ -23,13 +25,14 @@ namespace MyPhotosGUI
         private EditFileForm editFileForm;
         public AddPropertyForm(AddFileForm addFileForm)
         {
+            this.client = new DatabaseClient();
             this.addFileForm = addFileForm;
             InitializeComponent();
             //fileController = new FileController();
             //propertyController = new PropertyController();
             //filePropertyController = new FilePropertyController();
 
-            List<Property> properties = Program.client.GetAllProperties().ToList<Property>();
+            List<Property> properties = client.GetAllProperties().ToList<Property>();
             foreach(Property p in properties)
             {
                 propertyNameComboBox.Items.Add(p.Name);
@@ -39,13 +42,14 @@ namespace MyPhotosGUI
 
         public AddPropertyForm(EditFileForm editFileForm)
         {
+            this.client = new DatabaseClient();
             this.editFileForm = editFileForm;
             InitializeComponent();
             //fileController = new FileController();
             //propertyController = new PropertyController();
             //filePropertyController = new FilePropertyController();
 
-            List<Property> properties = Program.client.GetAllProperties().ToList<Property>();
+            List<Property> properties = client.GetAllProperties().ToList<Property>();
             foreach (Property p in properties)
             {
                 propertyNameComboBox.Items.Add(p.Name);
@@ -82,7 +86,7 @@ namespace MyPhotosGUI
             string val = existingPropValTextBox.Text;
             
             string selectedProp = propertyNameComboBox.SelectedItem.ToString();
-            this.property = Program.client.GetPropertyByName(selectedProp);
+            this.property = client.GetPropertyByName(selectedProp);
             if(this.property == null)
             {
                 MessageBox.Show("Something went wrong.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -93,7 +97,7 @@ namespace MyPhotosGUI
             }
             string dataType = property.DataType;
             
-            if(!Program.client.IsValueValid(val, dataType))
+            if(!client.IsValueValid(val, dataType))
             {
                 String message = "The value does not respect the property data type format. You should insert a ";
                 message += dataType == "string" ? "text" : dataType == "DateTime" ? "date" : dataType;
@@ -124,13 +128,13 @@ namespace MyPhotosGUI
             if (dataType == "Date") myDataType = "date";
             if (dataType == "Integer") myDataType = "integer";
             if (dataType == "Decimal") myDataType = "decimal";
-            if(!Program.client.IsValueValid(val, myDataType))
+            if(!client.IsValueValid(val, myDataType))
             {
                 MessageBox.Show("The value does not respect the property data type format.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                Property p = Program.client.CreateProperty(name, description, myDataType);
+                Property p = client.CreateProperty(name, description, myDataType);
                 if(p == null)
                 {
                     MessageBox.Show("Something went wrong.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

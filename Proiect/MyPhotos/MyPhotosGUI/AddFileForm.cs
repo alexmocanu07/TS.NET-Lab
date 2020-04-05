@@ -2,11 +2,13 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using Database;
 
 namespace MyPhotosGUI
 {
     public partial class AddFileForm : Form
     {
+        private DatabaseClient client;
         private Bitmap image;
         private string filePath;
         private string fileName;
@@ -17,6 +19,7 @@ namespace MyPhotosGUI
         
         public AddFileForm(MainApp mainApp)
         {
+            this.client = new DatabaseClient();
             this.mainApp = mainApp;
             image = null;
             filePath = null;
@@ -70,17 +73,17 @@ namespace MyPhotosGUI
             {
                 MessageBox.Show("You must provide a name and a path for the image.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if(Program.client.GetFileByPath(filePath) != null)
+            else if(client.GetFileByPath(filePath) != null)
             {
                 MessageBox.Show("File already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            else if (Program.client.GetFileByName(fileName) != null)
+            else if (client.GetFileByName(fileName) != null)
             {
                 MessageBox.Show("File name already exists.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                File f = Program.client.CreateFile(filePath, fileName);
+                File f = client.CreateFile(filePath, fileName);
                 if (f == null)
                 {
                     MessageBox.Show("Something went wrong.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -89,8 +92,8 @@ namespace MyPhotosGUI
                 else {
                     foreach (ListViewItem item in propertyListView.Items)
                     {
-                        Property p = Program.client.GetPropertyByName(item.Text);
-                        FileProperty fp = Program.client.AddPropertyToFile(f.Id, p.Id, item.SubItems[2].Text);
+                        Property p = client.GetPropertyByName(item.Text);
+                        FileProperty fp = client.AddPropertyToFile(f.Id, p.Id, item.SubItems[2].Text);
                         if(fp == null)
                         {
                             MessageBox.Show("Something went wrong.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

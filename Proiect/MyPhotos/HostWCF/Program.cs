@@ -11,7 +11,6 @@ namespace HostWCF
 {
     public class Program
     {
-      
         static void Main(string[] args)
         {
             Console.WriteLine("Lansare server WCF...");
@@ -26,7 +25,5 @@ namespace HostWCF
             host.Close();
 
         }
-        
     }
-    
 }

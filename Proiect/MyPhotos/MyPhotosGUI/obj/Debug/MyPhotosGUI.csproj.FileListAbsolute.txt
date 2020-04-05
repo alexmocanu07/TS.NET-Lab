@@ -11,3 +11,16 @@ D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.Edit
 D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.MainApp.resources
 D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.AddFileForm.resources
 D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csprojAssemblyReference.cache
+D:\TSNET\MyPhotos\MyPhotosGUI\bin\Debug\MyPhotosGUI.exe.config
+D:\TSNET\MyPhotos\MyPhotosGUI\bin\Debug\MyPhotosGUI.exe
+D:\TSNET\MyPhotos\MyPhotosGUI\bin\Debug\MyPhotosGUI.pdb
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csprojAssemblyReference.cache
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.AddPropertyForm.resources
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.EditFileForm.resources
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.MainApp.resources
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.AddFileForm.resources
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.Properties.Resources.resources
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csproj.GenerateResource.cache
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csproj.CoreCompileInputs.cache
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.exe
+D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.pdb

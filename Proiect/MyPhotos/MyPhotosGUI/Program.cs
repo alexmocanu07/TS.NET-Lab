@@ -11,16 +11,23 @@ namespace MyPhotosGUI
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        public static MyPhotosGUIClient client;
+        
         [STAThread]
         
         static void Main()
         {
-            client = new MyPhotosGUIClient();
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainApp());
 
+            
+        }
+
+        static void test()
+        {
+            DatabaseClient client = new DatabaseClient();
+            client.CreateFile(@"D:\aa.txt", "test");
             client.Close();
         }
     }

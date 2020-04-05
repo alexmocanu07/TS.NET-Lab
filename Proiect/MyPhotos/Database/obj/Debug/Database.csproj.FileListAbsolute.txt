@@ -10,3 +10,15 @@ D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\Database\obj\Debug\Database.csproj.Cor
 D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\Database\obj\Debug\Database.csproj.CopyComplete
 D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\Database\obj\Debug\Database.dll
 D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\Database\obj\Debug\Database.pdb
+D:\TSNET\MyPhotos\Database\bin\Debug\Database.dll.config
+D:\TSNET\MyPhotos\Database\bin\Debug\Database.dll
+D:\TSNET\MyPhotos\Database\bin\Debug\Database.pdb
+D:\TSNET\MyPhotos\Database\bin\Debug\EntityFramework.dll
+D:\TSNET\MyPhotos\Database\bin\Debug\EntityFramework.SqlServer.dll
+D:\TSNET\MyPhotos\Database\bin\Debug\EntityFramework.xml
+D:\TSNET\MyPhotos\Database\bin\Debug\EntityFramework.SqlServer.xml
+D:\TSNET\MyPhotos\Database\obj\Debug\Database.csprojAssemblyReference.cache
+D:\TSNET\MyPhotos\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+D:\TSNET\MyPhotos\Database\obj\Debug\Database.csproj.CopyComplete
+D:\TSNET\MyPhotos\Database\obj\Debug\Database.dll
+D:\TSNET\MyPhotos\Database\obj\Debug\Database.pdb

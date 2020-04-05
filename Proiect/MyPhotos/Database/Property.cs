@@ -11,7 +11,9 @@ namespace Database
 {
     using System;
     using System.Collections.Generic;
+    using System.Runtime.Serialization;
     
+    [DataContract(IsReference = true)]
     public partial class Property
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -19,14 +21,20 @@ namespace Database
         {
             this.FileProperties = new HashSet<FileProperty>();
         }
-    
+        [DataMember]
         public System.Guid Id { get; set; }
+        [DataMember]
         public string Name { get; set; }
+        [DataMember]
         public string Description { get; set; }
+        [DataMember]
         public string DataType { get; set; }
+        [DataMember]
         public bool Editable { get; set; }
+
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        [DataMember]
         public virtual ICollection<FileProperty> FileProperties { get; set; }
     }
 }

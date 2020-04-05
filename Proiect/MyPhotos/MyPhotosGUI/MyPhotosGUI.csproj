@@ -60,6 +60,7 @@
     <Compile Include="AddPropertyForm.Designer.cs">
       <DependentUpon>AddPropertyForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="DatabaseWCF.cs" />
     <Compile Include="EditFileForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,7 +75,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="proxy.cs" />
     <EmbeddedResource Include="AddPropertyForm.resx">
       <DependentUpon>AddPropertyForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +96,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -105,9 +106,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

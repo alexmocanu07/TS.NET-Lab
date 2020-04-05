@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Database;
 
 namespace MyPhotosGUI
 {
     public partial class EditFileForm : Form
     {
+        private DatabaseClient client;
+
         private MainApp mainApp;
         private Bitmap image;
         private File selectedFile;
@@ -23,6 +26,7 @@ namespace MyPhotosGUI
 
         public EditFileForm(MainApp mainApp)
         {
+            this.client = new DatabaseClient();
             this.mainApp = mainApp;
             this.selectedFile = mainApp.getSelectedFile();
 
@@ -43,12 +47,12 @@ namespace MyPhotosGUI
 
         private void UpdatePropertyListView()
         {
-            List<Property> properties = Program.client.GetFileProperties(selectedFile.Id).ToList<Property>();
+            List<Property> properties = client.GetFileProperties(selectedFile.Id).ToList<Property>();
             foreach (Property p in properties)
             {
                 ListViewItem item = new ListViewItem(p.Name);
                 item.SubItems.Add(p.Description);
-                FileProperty fp = Program.client.GetFileProperty(selectedFile.Id, p.Id);
+                FileProperty fp = client.GetFileProperty(selectedFile.Id, p.Id);
                 if (fp == null) return;
                 item.SubItems.Add(fp.Value);
                 propertyListView.Items.Add(item);
@@ -70,7 +74,7 @@ namespace MyPhotosGUI
             item.SubItems.Add(p.Description);
             item.SubItems.Add(propertyValue);
             propertyListView.Items.Add(item);
-            Program.client.AddPropertyToFile(selectedFile.Id, p.Id, propertyValue);
+            client.AddPropertyToFile(selectedFile.Id, p.Id, propertyValue);
         }
 
         private void editPropertyButton_Click(object sender, EventArgs e)
@@ -103,8 +107,8 @@ namespace MyPhotosGUI
                             break;
                         }
                     }
-                    Property p = Program.client.GetPropertyByName(propertyName);
-                    if (!Program.client.IsValueValid(newval, p.DataType))
+                    Property p = client.GetPropertyByName(propertyName);
+                    if (!client.IsValueValid(newval, p.DataType))
                     {
                         MessageBox.Show("The value does not respect the property data type format.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
@@ -112,7 +116,7 @@ namespace MyPhotosGUI
                     {
                         propertyListView.Items[index].SubItems[2].Text = newval;
 
-                        Program.client.UpdateValue(selectedFile.Id, p.Id, newval);
+                        client.UpdateValue(selectedFile.Id, p.Id, newval);
                     }
                 }
             }
@@ -136,8 +140,8 @@ namespace MyPhotosGUI
                     {
                         propertyListView.Items[i].Remove();
                         string propertyName = propertyListView.Items[i].SubItems[0].Text;
-                        Property p = Program.client.GetPropertyByName(propertyName);
-                        Program.client.RemoveProperty(selectedFile.Id, p.Id);
+                        Property p = client.GetPropertyByName(propertyName);
+                        client.RemoveProperty(selectedFile.Id, p.Id);
                         break;
                     }
                 }

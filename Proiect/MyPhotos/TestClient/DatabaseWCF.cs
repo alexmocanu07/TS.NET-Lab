@@ -8,14 +8,14 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MyPhotosGUI
+namespace Database
 {
     using System.Runtime.Serialization;
     
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="File", Namespace="http://schemas.datacontract.org/2004/07/MyPhotosGUI")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="File", Namespace="http://schemas.datacontract.org/2004/07/Database", IsReference=true)]
     public partial class File : object, System.Runtime.Serialization.IExtensibleDataObject
     {
         
@@ -23,7 +23,7 @@ namespace MyPhotosGUI
         
         private bool DeletedField;
         
-        private MyPhotosGUI.FileProperty[] FilePropertiesField;
+        private Database.FileProperty[] FilePropertiesField;
         
         private System.Guid IdField;
         
@@ -57,7 +57,7 @@ namespace MyPhotosGUI
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public MyPhotosGUI.FileProperty[] FileProperties
+        public Database.FileProperty[] FileProperties
         {
             get
             {
@@ -111,19 +111,19 @@ namespace MyPhotosGUI
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="FileProperty", Namespace="http://schemas.datacontract.org/2004/07/MyPhotosGUI")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="FileProperty", Namespace="http://schemas.datacontract.org/2004/07/Database", IsReference=true)]
     public partial class FileProperty : object, System.Runtime.Serialization.IExtensibleDataObject
     {
         
         private System.Runtime.Serialization.ExtensionDataObject extensionDataField;
         
-        private MyPhotosGUI.File FileField;
+        private Database.File FileField;
         
         private System.Guid FileIdField;
         
         private System.Guid IdField;
         
-        private MyPhotosGUI.Property PropertyField;
+        private Database.Property PropertyField;
         
         private System.Guid PropertyIdField;
         
@@ -142,7 +142,7 @@ namespace MyPhotosGUI
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public MyPhotosGUI.File File
+        public Database.File File
         {
             get
             {
@@ -181,7 +181,7 @@ namespace MyPhotosGUI
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public MyPhotosGUI.Property Property
+        public Database.Property Property
         {
             get
             {
@@ -222,7 +222,7 @@ namespace MyPhotosGUI
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Property", Namespace="http://schemas.datacontract.org/2004/07/MyPhotosGUI")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Property", Namespace="http://schemas.datacontract.org/2004/07/Database", IsReference=true)]
     public partial class Property : object, System.Runtime.Serialization.IExtensibleDataObject
     {
         
@@ -234,7 +234,7 @@ namespace MyPhotosGUI
         
         private bool EditableField;
         
-        private MyPhotosGUI.FileProperty[] FilePropertiesField;
+        private Database.FileProperty[] FilePropertiesField;
         
         private System.Guid IdField;
         
@@ -292,7 +292,7 @@ namespace MyPhotosGUI
         }
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public MyPhotosGUI.FileProperty[] FileProperties
+        public Database.FileProperty[] FileProperties
         {
             get
             {
@@ -339,124 +339,124 @@ public interface IDatabase
 {
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/CreateFile", ReplyAction="http://tempuri.org/InterfaceFile/CreateFileResponse")]
-    MyPhotosGUI.File CreateFile(string path, string name);
+    Database.File CreateFile(string path, string name);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/CreateFile", ReplyAction="http://tempuri.org/InterfaceFile/CreateFileResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File> CreateFileAsync(string path, string name);
+    System.Threading.Tasks.Task<Database.File> CreateFileAsync(string path, string name);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/GetFile", ReplyAction="http://tempuri.org/InterfaceFile/GetFileResponse")]
-    MyPhotosGUI.File GetFile(System.Guid id);
+    Database.File GetFile(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/GetFile", ReplyAction="http://tempuri.org/InterfaceFile/GetFileResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File> GetFileAsync(System.Guid id);
+    System.Threading.Tasks.Task<Database.File> GetFileAsync(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/GetAllFiles", ReplyAction="http://tempuri.org/InterfaceFile/GetAllFilesResponse")]
-    MyPhotosGUI.File[] GetAllFiles();
+    Database.File[] GetAllFiles();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/GetAllFiles", ReplyAction="http://tempuri.org/InterfaceFile/GetAllFilesResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File[]> GetAllFilesAsync();
+    System.Threading.Tasks.Task<Database.File[]> GetAllFilesAsync();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/GetFileByPath", ReplyAction="http://tempuri.org/InterfaceFile/GetFileByPathResponse")]
-    MyPhotosGUI.File GetFileByPath(string path);
+    Database.File GetFileByPath(string path);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/GetFileByPath", ReplyAction="http://tempuri.org/InterfaceFile/GetFileByPathResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File> GetFileByPathAsync(string path);
+    System.Threading.Tasks.Task<Database.File> GetFileByPathAsync(string path);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/GetFileByName", ReplyAction="http://tempuri.org/InterfaceFile/GetFileByNameResponse")]
-    MyPhotosGUI.File GetFileByName(string name);
+    Database.File GetFileByName(string name);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/GetFileByName", ReplyAction="http://tempuri.org/InterfaceFile/GetFileByNameResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File> GetFileByNameAsync(string name);
+    System.Threading.Tasks.Task<Database.File> GetFileByNameAsync(string name);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/UpdateFile", ReplyAction="http://tempuri.org/InterfaceFile/UpdateFileResponse")]
-    MyPhotosGUI.File UpdateFile(System.Guid id, string name, string path);
+    Database.File UpdateFile(System.Guid id, string name, string path);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/UpdateFile", ReplyAction="http://tempuri.org/InterfaceFile/UpdateFileResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File> UpdateFileAsync(System.Guid id, string name, string path);
+    System.Threading.Tasks.Task<Database.File> UpdateFileAsync(System.Guid id, string name, string path);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/DeleteFile", ReplyAction="http://tempuri.org/InterfaceFile/DeleteFileResponse")]
-    MyPhotosGUI.File DeleteFile(System.Guid id);
+    Database.File DeleteFile(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/DeleteFile", ReplyAction="http://tempuri.org/InterfaceFile/DeleteFileResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File> DeleteFileAsync(System.Guid id);
+    System.Threading.Tasks.Task<Database.File> DeleteFileAsync(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/RemoveFile", ReplyAction="http://tempuri.org/InterfaceFile/RemoveFileResponse")]
-    MyPhotosGUI.File RemoveFile(System.Guid id);
+    Database.File RemoveFile(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFile/RemoveFile", ReplyAction="http://tempuri.org/InterfaceFile/RemoveFileResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File> RemoveFileAsync(System.Guid id);
+    System.Threading.Tasks.Task<Database.File> RemoveFileAsync(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/InitDefaultProperties", ReplyAction="http://tempuri.org/InterfaceProperty/InitDefaultPropertiesResponse")]
-    MyPhotosGUI.Property[] InitDefaultProperties();
+    Database.Property[] InitDefaultProperties();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/InitDefaultProperties", ReplyAction="http://tempuri.org/InterfaceProperty/InitDefaultPropertiesResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.Property[]> InitDefaultPropertiesAsync();
+    System.Threading.Tasks.Task<Database.Property[]> InitDefaultPropertiesAsync();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/CreateProperty", ReplyAction="http://tempuri.org/InterfaceProperty/CreatePropertyResponse")]
-    MyPhotosGUI.Property CreateProperty(string name, string description, string dataType);
+    Database.Property CreateProperty(string name, string description, string dataType);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/CreateProperty", ReplyAction="http://tempuri.org/InterfaceProperty/CreatePropertyResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.Property> CreatePropertyAsync(string name, string description, string dataType);
+    System.Threading.Tasks.Task<Database.Property> CreatePropertyAsync(string name, string description, string dataType);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/GetAllProperties", ReplyAction="http://tempuri.org/InterfaceProperty/GetAllPropertiesResponse")]
-    MyPhotosGUI.Property[] GetAllProperties();
+    Database.Property[] GetAllProperties();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/GetAllProperties", ReplyAction="http://tempuri.org/InterfaceProperty/GetAllPropertiesResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.Property[]> GetAllPropertiesAsync();
+    System.Threading.Tasks.Task<Database.Property[]> GetAllPropertiesAsync();
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/GetProperty", ReplyAction="http://tempuri.org/InterfaceProperty/GetPropertyResponse")]
-    MyPhotosGUI.Property GetProperty(System.Guid id);
+    Database.Property GetProperty(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/GetProperty", ReplyAction="http://tempuri.org/InterfaceProperty/GetPropertyResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.Property> GetPropertyAsync(System.Guid id);
+    System.Threading.Tasks.Task<Database.Property> GetPropertyAsync(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/GetPropertyByName", ReplyAction="http://tempuri.org/InterfaceProperty/GetPropertyByNameResponse")]
-    MyPhotosGUI.Property GetPropertyByName(string name);
+    Database.Property GetPropertyByName(string name);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/GetPropertyByName", ReplyAction="http://tempuri.org/InterfaceProperty/GetPropertyByNameResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.Property> GetPropertyByNameAsync(string name);
+    System.Threading.Tasks.Task<Database.Property> GetPropertyByNameAsync(string name);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/UpdateProperty", ReplyAction="http://tempuri.org/InterfaceProperty/UpdatePropertyResponse")]
-    MyPhotosGUI.Property UpdateProperty(System.Guid id, string name, string description);
+    Database.Property UpdateProperty(System.Guid id, string name, string description);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/UpdateProperty", ReplyAction="http://tempuri.org/InterfaceProperty/UpdatePropertyResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.Property> UpdatePropertyAsync(System.Guid id, string name, string description);
+    System.Threading.Tasks.Task<Database.Property> UpdatePropertyAsync(System.Guid id, string name, string description);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/DeleteProperty", ReplyAction="http://tempuri.org/InterfaceProperty/DeletePropertyResponse")]
-    MyPhotosGUI.Property DeleteProperty(System.Guid id);
+    Database.Property DeleteProperty(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceProperty/DeleteProperty", ReplyAction="http://tempuri.org/InterfaceProperty/DeletePropertyResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.Property> DeletePropertyAsync(System.Guid id);
+    System.Threading.Tasks.Task<Database.Property> DeletePropertyAsync(System.Guid id);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/AddPropertyToFile", ReplyAction="http://tempuri.org/InterfaceFileProperty/AddPropertyToFileResponse")]
-    MyPhotosGUI.FileProperty AddPropertyToFile(System.Guid fileId, System.Guid propertyId, string value);
+    Database.FileProperty AddPropertyToFile(System.Guid fileId, System.Guid propertyId, string value);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/AddPropertyToFile", ReplyAction="http://tempuri.org/InterfaceFileProperty/AddPropertyToFileResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.FileProperty> AddPropertyToFileAsync(System.Guid fileId, System.Guid propertyId, string value);
+    System.Threading.Tasks.Task<Database.FileProperty> AddPropertyToFileAsync(System.Guid fileId, System.Guid propertyId, string value);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/GetFileProperty", ReplyAction="http://tempuri.org/InterfaceFileProperty/GetFilePropertyResponse")]
-    MyPhotosGUI.FileProperty GetFileProperty(System.Guid fileId, System.Guid propertyId);
+    Database.FileProperty GetFileProperty(System.Guid fileId, System.Guid propertyId);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/GetFileProperty", ReplyAction="http://tempuri.org/InterfaceFileProperty/GetFilePropertyResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.FileProperty> GetFilePropertyAsync(System.Guid fileId, System.Guid propertyId);
+    System.Threading.Tasks.Task<Database.FileProperty> GetFilePropertyAsync(System.Guid fileId, System.Guid propertyId);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/GetFileProperties", ReplyAction="http://tempuri.org/InterfaceFileProperty/GetFilePropertiesResponse")]
-    MyPhotosGUI.Property[] GetFileProperties(System.Guid fileId);
+    Database.Property[] GetFileProperties(System.Guid fileId);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/GetFileProperties", ReplyAction="http://tempuri.org/InterfaceFileProperty/GetFilePropertiesResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.Property[]> GetFilePropertiesAsync(System.Guid fileId);
+    System.Threading.Tasks.Task<Database.Property[]> GetFilePropertiesAsync(System.Guid fileId);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/GetFilesWithProperty", ReplyAction="http://tempuri.org/InterfaceFileProperty/GetFilesWithPropertyResponse")]
-    MyPhotosGUI.File[] GetFilesWithProperty(System.Guid propertyId);
+    Database.File[] GetFilesWithProperty(System.Guid propertyId);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/GetFilesWithProperty", ReplyAction="http://tempuri.org/InterfaceFileProperty/GetFilesWithPropertyResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.File[]> GetFilesWithPropertyAsync(System.Guid propertyId);
+    System.Threading.Tasks.Task<Database.File[]> GetFilesWithPropertyAsync(System.Guid propertyId);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/UpdateValue", ReplyAction="http://tempuri.org/InterfaceFileProperty/UpdateValueResponse")]
-    MyPhotosGUI.FileProperty UpdateValue(System.Guid fileId, System.Guid propertyId, string value);
+    Database.FileProperty UpdateValue(System.Guid fileId, System.Guid propertyId, string value);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/UpdateValue", ReplyAction="http://tempuri.org/InterfaceFileProperty/UpdateValueResponse")]
-    System.Threading.Tasks.Task<MyPhotosGUI.FileProperty> UpdateValueAsync(System.Guid fileId, System.Guid propertyId, string value);
+    System.Threading.Tasks.Task<Database.FileProperty> UpdateValueAsync(System.Guid fileId, System.Guid propertyId, string value);
     
     [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceFileProperty/RemoveProperty", ReplyAction="http://tempuri.org/InterfaceFileProperty/RemovePropertyResponse")]
     void RemoveProperty(System.Guid fileId, System.Guid propertyId);
@@ -478,229 +478,229 @@ public interface IDatabaseChannel : IDatabase, System.ServiceModel.IClientChanne
 
 [System.Diagnostics.DebuggerStepThroughAttribute()]
 [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public partial class MyPhotosGUIClient : System.ServiceModel.ClientBase<IDatabase>, IDatabase
+public partial class DatabaseClient : System.ServiceModel.ClientBase<IDatabase>, IDatabase
 {
     
-    public MyPhotosGUIClient()
+    public DatabaseClient()
     {
     }
     
-    public MyPhotosGUIClient(string endpointConfigurationName) : 
+    public DatabaseClient(string endpointConfigurationName) : 
             base(endpointConfigurationName)
     {
     }
     
-    public MyPhotosGUIClient(string endpointConfigurationName, string remoteAddress) : 
+    public DatabaseClient(string endpointConfigurationName, string remoteAddress) : 
             base(endpointConfigurationName, remoteAddress)
     {
     }
     
-    public MyPhotosGUIClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+    public DatabaseClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
             base(endpointConfigurationName, remoteAddress)
     {
     }
     
-    public MyPhotosGUIClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+    public DatabaseClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
             base(binding, remoteAddress)
     {
     }
     
-    public MyPhotosGUI.File CreateFile(string path, string name)
+    public Database.File CreateFile(string path, string name)
     {
         return base.Channel.CreateFile(path, name);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File> CreateFileAsync(string path, string name)
+    public System.Threading.Tasks.Task<Database.File> CreateFileAsync(string path, string name)
     {
         return base.Channel.CreateFileAsync(path, name);
     }
     
-    public MyPhotosGUI.File GetFile(System.Guid id)
+    public Database.File GetFile(System.Guid id)
     {
         return base.Channel.GetFile(id);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File> GetFileAsync(System.Guid id)
+    public System.Threading.Tasks.Task<Database.File> GetFileAsync(System.Guid id)
     {
         return base.Channel.GetFileAsync(id);
     }
     
-    public MyPhotosGUI.File[] GetAllFiles()
+    public Database.File[] GetAllFiles()
     {
         return base.Channel.GetAllFiles();
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File[]> GetAllFilesAsync()
+    public System.Threading.Tasks.Task<Database.File[]> GetAllFilesAsync()
     {
         return base.Channel.GetAllFilesAsync();
     }
     
-    public MyPhotosGUI.File GetFileByPath(string path)
+    public Database.File GetFileByPath(string path)
     {
         return base.Channel.GetFileByPath(path);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File> GetFileByPathAsync(string path)
+    public System.Threading.Tasks.Task<Database.File> GetFileByPathAsync(string path)
     {
         return base.Channel.GetFileByPathAsync(path);
     }
     
-    public MyPhotosGUI.File GetFileByName(string name)
+    public Database.File GetFileByName(string name)
     {
         return base.Channel.GetFileByName(name);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File> GetFileByNameAsync(string name)
+    public System.Threading.Tasks.Task<Database.File> GetFileByNameAsync(string name)
     {
         return base.Channel.GetFileByNameAsync(name);
     }
     
-    public MyPhotosGUI.File UpdateFile(System.Guid id, string name, string path)
+    public Database.File UpdateFile(System.Guid id, string name, string path)
     {
         return base.Channel.UpdateFile(id, name, path);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File> UpdateFileAsync(System.Guid id, string name, string path)
+    public System.Threading.Tasks.Task<Database.File> UpdateFileAsync(System.Guid id, string name, string path)
     {
         return base.Channel.UpdateFileAsync(id, name, path);
     }
     
-    public MyPhotosGUI.File DeleteFile(System.Guid id)
+    public Database.File DeleteFile(System.Guid id)
     {
         return base.Channel.DeleteFile(id);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File> DeleteFileAsync(System.Guid id)
+    public System.Threading.Tasks.Task<Database.File> DeleteFileAsync(System.Guid id)
     {
         return base.Channel.DeleteFileAsync(id);
     }
     
-    public MyPhotosGUI.File RemoveFile(System.Guid id)
+    public Database.File RemoveFile(System.Guid id)
     {
         return base.Channel.RemoveFile(id);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File> RemoveFileAsync(System.Guid id)
+    public System.Threading.Tasks.Task<Database.File> RemoveFileAsync(System.Guid id)
     {
         return base.Channel.RemoveFileAsync(id);
     }
     
-    public MyPhotosGUI.Property[] InitDefaultProperties()
+    public Database.Property[] InitDefaultProperties()
     {
         return base.Channel.InitDefaultProperties();
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.Property[]> InitDefaultPropertiesAsync()
+    public System.Threading.Tasks.Task<Database.Property[]> InitDefaultPropertiesAsync()
     {
         return base.Channel.InitDefaultPropertiesAsync();
     }
     
-    public MyPhotosGUI.Property CreateProperty(string name, string description, string dataType)
+    public Database.Property CreateProperty(string name, string description, string dataType)
     {
         return base.Channel.CreateProperty(name, description, dataType);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.Property> CreatePropertyAsync(string name, string description, string dataType)
+    public System.Threading.Tasks.Task<Database.Property> CreatePropertyAsync(string name, string description, string dataType)
     {
         return base.Channel.CreatePropertyAsync(name, description, dataType);
     }
     
-    public MyPhotosGUI.Property[] GetAllProperties()
+    public Database.Property[] GetAllProperties()
     {
         return base.Channel.GetAllProperties();
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.Property[]> GetAllPropertiesAsync()
+    public System.Threading.Tasks.Task<Database.Property[]> GetAllPropertiesAsync()
     {
         return base.Channel.GetAllPropertiesAsync();
     }
     
-    public MyPhotosGUI.Property GetProperty(System.Guid id)
+    public Database.Property GetProperty(System.Guid id)
     {
         return base.Channel.GetProperty(id);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.Property> GetPropertyAsync(System.Guid id)
+    public System.Threading.Tasks.Task<Database.Property> GetPropertyAsync(System.Guid id)
     {
         return base.Channel.GetPropertyAsync(id);
     }
     
-    public MyPhotosGUI.Property GetPropertyByName(string name)
+    public Database.Property GetPropertyByName(string name)
     {
         return base.Channel.GetPropertyByName(name);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.Property> GetPropertyByNameAsync(string name)
+    public System.Threading.Tasks.Task<Database.Property> GetPropertyByNameAsync(string name)
     {
         return base.Channel.GetPropertyByNameAsync(name);
     }
     
-    public MyPhotosGUI.Property UpdateProperty(System.Guid id, string name, string description)
+    public Database.Property UpdateProperty(System.Guid id, string name, string description)
     {
         return base.Channel.UpdateProperty(id, name, description);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.Property> UpdatePropertyAsync(System.Guid id, string name, string description)
+    public System.Threading.Tasks.Task<Database.Property> UpdatePropertyAsync(System.Guid id, string name, string description)
     {
         return base.Channel.UpdatePropertyAsync(id, name, description);
     }
     
-    public MyPhotosGUI.Property DeleteProperty(System.Guid id)
+    public Database.Property DeleteProperty(System.Guid id)
     {
         return base.Channel.DeleteProperty(id);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.Property> DeletePropertyAsync(System.Guid id)
+    public System.Threading.Tasks.Task<Database.Property> DeletePropertyAsync(System.Guid id)
     {
         return base.Channel.DeletePropertyAsync(id);
     }
     
-    public MyPhotosGUI.FileProperty AddPropertyToFile(System.Guid fileId, System.Guid propertyId, string value)
+    public Database.FileProperty AddPropertyToFile(System.Guid fileId, System.Guid propertyId, string value)
     {
         return base.Channel.AddPropertyToFile(fileId, propertyId, value);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.FileProperty> AddPropertyToFileAsync(System.Guid fileId, System.Guid propertyId, string value)
+    public System.Threading.Tasks.Task<Database.FileProperty> AddPropertyToFileAsync(System.Guid fileId, System.Guid propertyId, string value)
     {
         return base.Channel.AddPropertyToFileAsync(fileId, propertyId, value);
     }
     
-    public MyPhotosGUI.FileProperty GetFileProperty(System.Guid fileId, System.Guid propertyId)
+    public Database.FileProperty GetFileProperty(System.Guid fileId, System.Guid propertyId)
     {
         return base.Channel.GetFileProperty(fileId, propertyId);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.FileProperty> GetFilePropertyAsync(System.Guid fileId, System.Guid propertyId)
+    public System.Threading.Tasks.Task<Database.FileProperty> GetFilePropertyAsync(System.Guid fileId, System.Guid propertyId)
     {
         return base.Channel.GetFilePropertyAsync(fileId, propertyId);
     }
     
-    public MyPhotosGUI.Property[] GetFileProperties(System.Guid fileId)
+    public Database.Property[] GetFileProperties(System.Guid fileId)
     {
         return base.Channel.GetFileProperties(fileId);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.Property[]> GetFilePropertiesAsync(System.Guid fileId)
+    public System.Threading.Tasks.Task<Database.Property[]> GetFilePropertiesAsync(System.Guid fileId)
     {
         return base.Channel.GetFilePropertiesAsync(fileId);
     }
     
-    public MyPhotosGUI.File[] GetFilesWithProperty(System.Guid propertyId)
+    public Database.File[] GetFilesWithProperty(System.Guid propertyId)
     {
         return base.Channel.GetFilesWithProperty(propertyId);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.File[]> GetFilesWithPropertyAsync(System.Guid propertyId)
+    public System.Threading.Tasks.Task<Database.File[]> GetFilesWithPropertyAsync(System.Guid propertyId)
     {
         return base.Channel.GetFilesWithPropertyAsync(propertyId);
     }
     
-    public MyPhotosGUI.FileProperty UpdateValue(System.Guid fileId, System.Guid propertyId, string value)
+    public Database.FileProperty UpdateValue(System.Guid fileId, System.Guid propertyId, string value)
     {
         return base.Channel.UpdateValue(fileId, propertyId, value);
     }
     
-    public System.Threading.Tasks.Task<MyPhotosGUI.FileProperty> UpdateValueAsync(System.Guid fileId, System.Guid propertyId, string value)
+    public System.Threading.Tasks.Task<Database.FileProperty> UpdateValueAsync(System.Guid fileId, System.Guid propertyId, string value)
     {
         return base.Channel.UpdateValueAsync(fileId, propertyId, value);
     }

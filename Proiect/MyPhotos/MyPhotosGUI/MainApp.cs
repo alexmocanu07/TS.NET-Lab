@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Database;
 
 namespace MyPhotosGUI
 {
@@ -21,9 +22,12 @@ namespace MyPhotosGUI
 
         private File selectedFile;
 
+        private DatabaseClient client;
+
 
         public MainApp()
         {
+            client = new DatabaseClient();
             //fileController = new FileController();
             //propertyController = new PropertyController();
             //filePropertyController = new FilePropertyController();
@@ -33,7 +37,7 @@ namespace MyPhotosGUI
 
         private List<File> InitializeFiles()
         {
-            List<File> files = Program.client.GetAllFiles().ToList<File>();
+            List<File> files = client.GetAllFiles().ToList<File>();
             foreach(File f in files)
             {
                 ListViewItem item = new ListViewItem(f.Name);
@@ -54,13 +58,13 @@ namespace MyPhotosGUI
 
         public void changePropertyListView(File f)
         {
-            List<Property> properties = Program.client.GetFileProperties(f.Id).ToList<Property>();
+            List<Property> properties = client.GetFileProperties(f.Id).ToList<Property>();
             propertyListView.Items.Clear();
             foreach(Property p in properties)
             {
                 ListViewItem item = new ListViewItem(p.Name);
                 item.SubItems.Add(p.Description);
-                FileProperty fp = Program.client.GetFileProperty(f.Id, p.Id);
+                FileProperty fp = client.GetFileProperty(f.Id, p.Id);
                 if (fp == null) return;
                 item.SubItems.Add(fp.Value);
                 propertyListView.Items.Add(item);
@@ -73,7 +77,7 @@ namespace MyPhotosGUI
                 ListViewItem item = fileListView.SelectedItems[0];
   
                 string path = item.SubItems[1].Text;
-                File f = Program.client.GetFileByPath(path);
+                File f = client.GetFileByPath(path);
                 if (f == null) return;
                 changePropertyListView(f);
                 selectedFile = f;

@@ -11,15 +11,22 @@ namespace Database
 {
     using System;
     using System.Collections.Generic;
+    using System.Runtime.Serialization;
+    [DataContract(IsReference=true)]
     
     public partial class FileProperty
     {
+        [DataMember]
         public System.Guid Id { get; set; }
+        [DataMember]
         public System.Guid FileId { get; set; }
+        [DataMember]
         public System.Guid PropertyId { get; set; }
+        [DataMember]
         public string Value { get; set; }
-    
+        [DataMember]
         public virtual File File { get; set; }
+        [DataMember]
         public virtual Property Property { get; set; }
     }
 }

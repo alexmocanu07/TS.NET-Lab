@@ -1,14 +1,14 @@
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\ObjectWCF.dll
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\ObjectWCF.pdb
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\Database.dll
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.dll
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.SqlServer.dll
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\Database.pdb
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\Database.dll.config
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.xml
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.SqlServer.xml
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csproj.CoreCompileInputs.cache
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.dll
-D:\Alex\Fac\An3 Sem2\TSP\Project\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.pdb
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\ObjectWCF.dll
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\ObjectWCF.pdb
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\Database.dll
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.dll
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.SqlServer.dll
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\Database.pdb
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\Database.dll.config
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.xml
+D:\TSNET\MyPhotos\ObjectWCF\bin\Debug\EntityFramework.SqlServer.xml
+D:\TSNET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csprojAssemblyReference.cache
+D:\TSNET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csproj.CoreCompileInputs.cache
+D:\TSNET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.csproj.CopyComplete
+D:\TSNET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.dll
+D:\TSNET\MyPhotos\ObjectWCF\obj\Debug\ObjectWCF.pdb

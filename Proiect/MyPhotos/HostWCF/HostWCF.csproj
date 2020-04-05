@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90DCF958-1C68-4898-AF33-F4B478A3B010}</ProjectGuid>
+    <ProjectGuid>{7E8927F1-1C33-47BF-9000-1F0493C1185B}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>HostWCF</RootNamespace>
     <AssemblyName>HostWCF</AssemblyName>
@@ -35,7 +35,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,7 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ObjectWCF\ObjectWCF.csproj">
-      <Project>{a502a168-8deb-40c0-a2f7-2d7c96ebf9e1}</Project>
+      <Project>{e85f5022-6152-4fef-8fc0-22080f949527}</Project>
       <Name>ObjectWCF</Name>
     </ProjectReference>
   </ItemGroup>

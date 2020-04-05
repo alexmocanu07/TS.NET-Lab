@@ -15,7 +15,7 @@ namespace Database
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="File", Namespace="http://schemas.datacontract.org/2004/07/Database")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="File", Namespace="http://schemas.datacontract.org/2004/07/Database", IsReference=true)]
     public partial class File : object, System.Runtime.Serialization.IExtensibleDataObject
     {
         
@@ -111,7 +111,7 @@ namespace Database
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="FileProperty", Namespace="http://schemas.datacontract.org/2004/07/Database")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="FileProperty", Namespace="http://schemas.datacontract.org/2004/07/Database", IsReference=true)]
     public partial class FileProperty : object, System.Runtime.Serialization.IExtensibleDataObject
     {
         
@@ -222,7 +222,7 @@ namespace Database
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Runtime.Serialization", "4.0.0.0")]
-    [System.Runtime.Serialization.DataContractAttribute(Name="Property", Namespace="http://schemas.datacontract.org/2004/07/Database")]
+    [System.Runtime.Serialization.DataContractAttribute(Name="Property", Namespace="http://schemas.datacontract.org/2004/07/Database", IsReference=true)]
     public partial class Property : object, System.Runtime.Serialization.IExtensibleDataObject
     {
         
