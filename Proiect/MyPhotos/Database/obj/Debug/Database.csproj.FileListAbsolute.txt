@@ -22,3 +22,15 @@ D:\TSNET\MyPhotos\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
 D:\TSNET\MyPhotos\Database\obj\Debug\Database.csproj.CopyComplete
 D:\TSNET\MyPhotos\Database\obj\Debug\Database.dll
 D:\TSNET\MyPhotos\Database\obj\Debug\Database.pdb
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\bin\Debug\Database.dll.config
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\bin\Debug\Database.dll
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\bin\Debug\Database.pdb
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\bin\Debug\EntityFramework.dll
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\bin\Debug\EntityFramework.xml
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\obj\Debug\Database.csprojAssemblyReference.cache
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\obj\Debug\Database.csproj.CoreCompileInputs.cache
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\obj\Debug\Database.csproj.CopyComplete
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\obj\Debug\Database.dll
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\Database\obj\Debug\Database.pdb

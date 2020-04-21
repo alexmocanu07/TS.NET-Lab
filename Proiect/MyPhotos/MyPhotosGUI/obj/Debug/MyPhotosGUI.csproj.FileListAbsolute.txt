@@ -24,3 +24,16 @@ D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csproj.GenerateResource.cach
 D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csproj.CoreCompileInputs.cache
 D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.exe
 D:\TSNET\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.pdb
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\bin\Debug\MyPhotosGUI.exe.config
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\bin\Debug\MyPhotosGUI.exe
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\bin\Debug\MyPhotosGUI.pdb
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csprojAssemblyReference.cache
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.AddPropertyForm.resources
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.EditFileForm.resources
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.MainApp.resources
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.AddFileForm.resources
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.Properties.Resources.resources
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csproj.GenerateResource.cache
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.csproj.CoreCompileInputs.cache
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.exe
+D:\GitHub\TS.Net-Lab\Proiect\MyPhotos\MyPhotosGUI\obj\Debug\MyPhotosGUI.pdb
