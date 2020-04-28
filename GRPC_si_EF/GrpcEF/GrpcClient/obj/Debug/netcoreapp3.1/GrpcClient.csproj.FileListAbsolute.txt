@@ -1,0 +1,9 @@
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.deps.json
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.dll
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csprojAssemblyReference.cache
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfoInputs.cache
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.AssemblyInfo.cs
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\bin\Debug\netcoreapp3.1\GrpcClient.pdb
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.csproj.CoreCompileInputs.cache
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.dll
+D:\TSNET\GRPC_si_EF\GrpcEF\GrpcClient\obj\Debug\netcoreapp3.1\GrpcClient.pdb

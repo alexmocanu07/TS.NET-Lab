@@ -1,0 +1,53 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+import "google/protobuf/empty.proto";
+option csharp_namespace = "GrpcService.Protos";
+
+service GrpcApi{
+	rpc AddPost (PostModel) returns (BoolResultMessage);
+	rpc UpdatePost (PostModel) returns (PostModel);
+	rpc DeletePost (PostIdMessage) returns (IntResultMessage);
+	rpc GetPostById (PostIdMessage) returns (PostModel);
+	rpc GetAllPosts (google.protobuf.Empty) returns (PostListMessage);
+
+	rpc AddComment (CommentModel) returns (BoolResultMessage);
+	rpc UpdateComment (CommentModel) returns (CommentModel);
+	rpc GetCommentById (CommentIdMessage) returns (CommentModel);
+	
+}
+
+
+
+message PostModel {
+	int32 postId = 1;
+	string Descripion = 2;
+	string Domain = 3;
+	google.protobuf.Timestamp Date = 4;
+	repeated CommentModel comments = 5;
+}
+
+message CommentModel {
+	int32 commentId = 1;
+	string Text = 2;
+	int32 postPostId = 3; 
+
+}
+
+message PostIdMessage{
+	int32 postId = 1;
+}
+message CommentIdMessage{
+	int32 commentId = 1;
+}
+
+message PostListMessage{
+	repeated PostModel posts = 1;
+}
+
+message BoolResultMessage{
+	bool result = 1;
+}
+
+message IntResultMessage{
+	int32 result = 1;
+}

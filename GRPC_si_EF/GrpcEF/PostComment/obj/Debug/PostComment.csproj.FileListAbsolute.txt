@@ -1,0 +1,23 @@
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\bin\Debug\PostComment.dll.config
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\bin\Debug\PostComment.dll
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\bin\Debug\PostComment.pdb
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\bin\Debug\EntityFramework.dll
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\bin\Debug\EntityFramework.SqlServer.dll
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\bin\Debug\EntityFramework.xml
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\bin\Debug\EntityFramework.SqlServer.xml
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\obj\Debug\PostComment.csprojAssemblyReference.cache
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\obj\Debug\PostComment.csproj.CopyComplete
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\obj\Debug\PostComment.dll
+D:\TSP DotNet\WCF EF PostComment\WCFEF\PostComment\obj\Debug\PostComment.pdb
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\bin\Debug\PostComment.dll.config
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\bin\Debug\PostComment.dll
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\bin\Debug\PostComment.pdb
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\bin\Debug\EntityFramework.dll
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\bin\Debug\EntityFramework.SqlServer.dll
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\bin\Debug\EntityFramework.xml
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\bin\Debug\EntityFramework.SqlServer.xml
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\obj\Debug\PostComment.csproj.CoreCompileInputs.cache
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\obj\Debug\PostComment.csproj.CopyComplete
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\obj\Debug\PostComment.dll
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\obj\Debug\PostComment.pdb
+D:\TSNET\GRPC_si_EF\GrpcEF\PostComment\obj\Debug\PostComment.csprojAssemblyReference.cache
