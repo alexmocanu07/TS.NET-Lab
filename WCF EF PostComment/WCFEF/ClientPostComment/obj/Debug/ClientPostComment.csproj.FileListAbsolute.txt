@@ -7,3 +7,18 @@ D:\TSP DotNet\WCF EF PostComment\WCFEF\ClientPostComment\bin\Debug\ClientPostCom
 D:\TSP DotNet\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.exe
 D:\TSP DotNet\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.pdb
 D:\TSP DotNet\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.Form1.resources
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\bin\Debug\ClientPostComment.exe.config
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\bin\Debug\ClientPostComment.exe
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\bin\Debug\ClientPostComment.pdb
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.csprojAssemblyReference.cache
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.Form1.resources
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.Properties.Resources.resources
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.csproj.GenerateResource.cache
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.csproj.CoreCompileInputs.cache
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.exe
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.pdb
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\bin\Debug\EntityFramework.dll
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\bin\Debug\EntityFramework.SqlServer.dll
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\bin\Debug\EntityFramework.xml
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\bin\Debug\EntityFramework.SqlServer.xml
+D:\GitHub\TS.Net-Lab\WCF EF PostComment\WCFEF\ClientPostComment\obj\Debug\ClientPostComment.csproj.CopyComplete
