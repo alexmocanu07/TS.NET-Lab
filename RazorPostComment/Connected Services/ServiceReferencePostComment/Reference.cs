@@ -18,7 +18,7 @@ namespace ServiceReferencePostComment
     public partial class Post : object
     {
         
-        private ServiceReferencePostComment.Comment[] CommentsField;
+        private System.Collections.Generic.List<ServiceReferencePostComment.Comment> CommentsField;
         
         private System.DateTime DateField;
         
@@ -29,7 +29,7 @@ namespace ServiceReferencePostComment
         private int PostIdField;
         
         [System.Runtime.Serialization.DataMemberAttribute()]
-        public ServiceReferencePostComment.Comment[] Comments
+        public System.Collections.Generic.List<ServiceReferencePostComment.Comment> Comments
         {
             get
             {
@@ -179,7 +179,7 @@ namespace ServiceReferencePostComment
         System.Threading.Tasks.Task<ServiceReferencePostComment.Post> GetPostByIdAsync(int id);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfacePost/GetPosts", ReplyAction="http://tempuri.org/InterfacePost/GetPostsResponse")]
-        System.Threading.Tasks.Task<ServiceReferencePostComment.Post[]> GetPostsAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferencePostComment.Post>> GetPostsAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InterfaceComment/AddComment", ReplyAction="http://tempuri.org/InterfaceComment/AddCommentResponse")]
         System.Threading.Tasks.Task<bool> AddCommentAsync(ServiceReferencePostComment.Comment comment);
@@ -261,7 +261,7 @@ namespace ServiceReferencePostComment
             return base.Channel.GetPostByIdAsync(id);
         }
         
-        public System.Threading.Tasks.Task<ServiceReferencePostComment.Post[]> GetPostsAsync()
+        public System.Threading.Tasks.Task<System.Collections.Generic.List<ServiceReferencePostComment.Post>> GetPostsAsync()
         {
             return base.Channel.GetPostsAsync();
         }
