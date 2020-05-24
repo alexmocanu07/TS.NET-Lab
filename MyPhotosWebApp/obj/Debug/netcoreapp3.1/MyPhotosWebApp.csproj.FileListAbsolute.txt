@@ -120,3 +120,4 @@ D:\GitHub\TS.Net-Lab\MyPhotosWebApp\obj\Debug\netcoreapp3.1\MyPhotosWebApp.dll
 D:\GitHub\TS.Net-Lab\MyPhotosWebApp\obj\Debug\netcoreapp3.1\MyPhotosWebApp.pdb
 D:\GitHub\TS.Net-Lab\MyPhotosWebApp\obj\Debug\netcoreapp3.1\MyPhotosWebApp.genruntimeconfig.cache
 D:\GitHub\TS.Net-Lab\MyPhotosWebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Files\Index.cshtml.g.cs
+D:\GitHub\TS.Net-Lab\MyPhotosWebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Properties\Index.cshtml.g.cs

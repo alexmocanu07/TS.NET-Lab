@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using ServiceReferenceMyPhotos;
 using MyPhotosWebApp.Models;
 using Microsoft.AspNetCore.Authentication.OAuth.Claims;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MyPhotosWebApp.Pages.Files
 {
@@ -17,15 +18,33 @@ namespace MyPhotosWebApp.Pages.Files
         public List<PropertyDTO> Properties { get; set; }
         public Dictionary<FileDTO, List<PropertyDTO>> filePropertyDictionary;
         public DatabaseClient client = new DatabaseClient();
+        [BindProperty(SupportsGet = true)]
+        public string SearchString { get; set; }
+        public SelectList propertyNames { get; set; }
+        [BindProperty(SupportsGet = true)]
+        public string SearchProperty { get; set; }
+        public int resultCount { get; set; }
         public IndexModel()
         {
             Files = new List<FileDTO>();
             FileProperties = new List<FilePropertyDTO>();
             Properties = new List<PropertyDTO>();
             filePropertyDictionary = new Dictionary<FileDTO, List<PropertyDTO>>();
+            resultCount = 0;
         }
         public async Task OnGetAsync()
         {
+            if (!string.IsNullOrEmpty(SearchString))
+            {
+
+            }
+            List<string> propNames = new List<string>();
+            var props = await client.GetAllPropertiesAsync();
+            foreach(var prop in props)
+            {
+                propNames.Add(prop.Name);
+            }
+            propertyNames = new SelectList(propNames);
             var files = await client.GetAllFilesAsync();
             foreach(var file in files)
             {
@@ -33,13 +52,25 @@ namespace MyPhotosWebApp.Pages.Files
 
                 List<PropertyDTO> currentProperties = new List<PropertyDTO>();
                 var properties = await client.GetFilePropertiesAsync(file.Id);
+                bool toAdd = false;
                 foreach(var property in properties)
                 {
                     PropertyDTO propertyDTO = new PropertyDTO(property);
                     currentProperties.Add(propertyDTO);
+                    if (!string.IsNullOrEmpty(SearchProperty))
+                    {
+                        if (propertyDTO.Name == SearchProperty)
+                            toAdd = true;
+                    }
+                    else
+                        toAdd = true;
                 }
-                this.Files.Add(fileDTO);
-                filePropertyDictionary.Add(fileDTO, currentProperties);
+                if (toAdd)
+                {
+                    resultCount++;
+                    this.Files.Add(fileDTO);
+                    filePropertyDictionary.Add(fileDTO, currentProperties);
+                }
             }
         }
     }

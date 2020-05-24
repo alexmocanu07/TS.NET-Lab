@@ -1,0 +1,55 @@
+﻿@page
+@model MyPhotosWebApp.Pages.Properties.IndexModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>File Properties</h1>
+<h2>Image name: @Model.imageName</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Properties[0].Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Properties[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Properties[0].Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Properties[0].DataType)
+            </th>
+           
+            <th>
+                Value
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.propertyValueDictionary)
+        {
+        <tr style="font-size:small">
+            <td>
+                @Html.DisplayFor(modelItem => item.Key.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Key.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Key.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Key.DataType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Value)
+            </td>
+            
+        </tr>
+        }
+    </tbody>
+</table>
+

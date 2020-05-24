@@ -4,7 +4,16 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Files</h1>
+<form>
+    <p> Property
+        <select asp-for="SearchProperty" asp-items="Model.propertyNames">
+        <option value="">All</option>
+            </select>
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+<p>Found @Model.resultCount files.</p>
 <table class="table">
     <thead>
         <tr>
@@ -35,7 +44,7 @@
                     @Html.DisplayFor(modelItem => item.Path)
                 </td>
                 <td>
-                    <a asp-page="/Properties/List" asp-route-id="@item.">Details</a> |
+                    <a asp-page="../Properties/Index" asp-route-id="@item.Id">Details</a> 
                 </td>
             </tr>
         }

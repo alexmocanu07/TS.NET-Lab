@@ -15,11 +15,12 @@ namespace MyPhotosWebApp.Pages
         public IndexModel(ILogger<IndexModel> logger)
         {
             _logger = logger;
+            RedirectToPage("/Files/Index");
         }
 
         public void OnGet()
         {
-
+            
         }
     }
 }
