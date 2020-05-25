@@ -11,16 +11,12 @@ namespace MyPhotosWebApp.Pages.Properties
 {
     public class IndexModel : PageModel
     {
-        public List<FileDTO> Files { get; set; }
-        public List<FilePropertyDTO> FileProperties { get; set; }
         public List<PropertyDTO> Properties { get; set; }
         public Dictionary<PropertyDTO, string> propertyValueDictionary;
         public DatabaseClient client = new DatabaseClient();
         public string imageName;
         public IndexModel()
         {
-            Files = new List<FileDTO>();
-            FileProperties = new List<FilePropertyDTO>();
             Properties = new List<PropertyDTO>();
             propertyValueDictionary = new Dictionary<PropertyDTO, string>();
         }
@@ -44,7 +40,6 @@ namespace MyPhotosWebApp.Pages.Properties
                 var fileProperty = await client.GetFilePropertyAsync(guid, property.Id);
                 propertyValueDictionary.Add(property, fileProperty.Value);
             }
-            
         }
     }
 }

@@ -20,13 +20,6 @@ namespace MyPhotosWebApp.Models
             this.Name = file.Name;
             this.Path = file.Path;
             this.Deleted = file.Deleted;
-            /*
-             * foreach(FileProperty property in file.FileProperties)
-            {
-                FilePropertyDTO filePropertyDTO = new FilePropertyDTO(property, this);
-                this.FileProperties.Add(filePropertyDTO);
-            }
-            */
         }
 
         public System.Guid Id { get; set; }

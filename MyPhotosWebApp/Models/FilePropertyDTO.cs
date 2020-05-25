@@ -15,22 +15,7 @@ namespace MyPhotosWebApp.Models
             this.PropertyId = fileProperty.PropertyId;
             this.Value = fileProperty.Value;
         }
-        public FilePropertyDTO(FileProperty fileProperty, FileDTO fileDTO)
-        {
-            this.Id = fileProperty.Id;
-            this.FileId = fileProperty.FileId;
-            this.PropertyId = fileProperty.PropertyId;
-            this.Value = fileProperty.Value;
-            this.File = fileDTO;
-        }
-        public FilePropertyDTO(FileProperty fileProperty, PropertyDTO propertyDTO)
-        {
-            this.Id = fileProperty.Id;
-            this.FileId = fileProperty.FileId;
-            this.PropertyId = fileProperty.PropertyId;
-            this.Value = fileProperty.Value;
-            this.Property = propertyDTO;
-        }
+        
         public System.Guid Id { get; set; }
         
         public System.Guid FileId { get; set; }
